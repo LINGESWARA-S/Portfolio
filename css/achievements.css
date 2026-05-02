@@ -197,5 +197,13 @@
 }
 
 @media (max-width: 768px) {
-  .achievement-image { height: 150px; }
+  .achievements-grid,
+  .achievements-extra {
+    grid-template-columns: 1fr;
+    gap: var(--sp-6);
+  }
+  .achievement-image { height: 200px; }
+  .achievement-body { padding: var(--sp-4); }
+  .achievement-icon { width: 40px; height: 40px; font-size: var(--fs-sm); margin-top: -32px; }
+  .achievement-title { font-size: var(--fs-base); }
 }

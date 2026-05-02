@@ -105,5 +105,9 @@ textarea.form-input:not(:placeholder-shown) + .form-label {
 }
 
 @media (max-width: 768px) {
-  .contact-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: var(--sp-8); }
+  .contact-info { text-align: center; }
+  .contact-details { align-items: center; }
+  .contact-detail-item { flex-direction: column; text-align: center; gap: var(--sp-2); }
+  .contact-socials { justify-content: center; }
 }
