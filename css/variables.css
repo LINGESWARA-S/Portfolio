@@ -1,0 +1,167 @@
+/* ============================================
+   DESIGN TOKENS — Portfolio Design System
+   ============================================ */
+
+:root {
+  /* ── Primary Palette ── */
+  --clr-bg-primary: #050505;
+  --clr-bg-secondary: #0a0a0a;
+  --clr-bg-tertiary: #121212;
+  --clr-bg-card: rgba(18, 18, 18, 0.6);
+  --clr-bg-glass: rgba(255, 255, 255, 0.03);
+  --clr-bg-glass-hover: rgba(255, 255, 255, 0.06);
+
+  /* ── Accent Colors ── */
+  --clr-accent-blue: #10b981; /* Used as Emerald now */
+  --clr-accent-purple: #14b8a6; /* Used as Teal now */
+  --clr-accent-pink: #0ea5e9; /* Used as Sky Blue now */
+  --clr-accent-green: #84cc16;
+  --clr-accent-orange: #fb923c;
+  --clr-accent-cyan: #06b6d4;
+
+  /* ── Gradients ── */
+  --grad-primary: linear-gradient(135deg, #10b981, #14b8a6);
+  --grad-secondary: linear-gradient(135deg, #14b8a6, #0ea5e9);
+  --grad-accent: linear-gradient(135deg, #10b981, #14b8a6, #0ea5e9);
+  --grad-bg: linear-gradient(180deg, #050505 0%, #0a0a0a 50%, #050505 100%);
+  --grad-card: linear-gradient(135deg, rgba(16, 185, 129, 0.05), rgba(20, 184, 166, 0.05));
+  --grad-glow-blue: radial-gradient(circle, rgba(16, 185, 129, 0.15) 0%, transparent 70%);
+  --grad-glow-purple: radial-gradient(circle, rgba(20, 184, 166, 0.15) 0%, transparent 70%);
+
+  /* ── Text Colors ── */
+  --clr-text-primary: #f8fafc;
+  --clr-text-secondary: #94a3b8;
+  --clr-text-muted: #64748b;
+  --clr-text-accent: #10b981;
+
+  /* ── Borders ── */
+  --clr-border: rgba(255, 255, 255, 0.06);
+  --clr-border-hover: rgba(16, 185, 129, 0.3);
+  --clr-border-glass: rgba(255, 255, 255, 0.08);
+
+  /* ── Typography ── */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-md: 1.125rem;
+  --fs-lg: 1.25rem;
+  --fs-xl: 1.5rem;
+  --fs-2xl: 2rem;
+  --fs-3xl: 2.5rem;
+  --fs-4xl: 3.5rem;
+  --fs-5xl: 4.5rem;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extrabold: 800;
+
+  --lh-tight: 1.2;
+  --lh-normal: 1.6;
+  --lh-relaxed: 1.8;
+
+  /* ── Spacing ── */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.25rem;
+  --sp-6: 1.5rem;
+  --sp-8: 2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* ── Border Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* ── Shadows ── */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.6);
+  --shadow-glow-blue: 0 0 20px rgba(16, 185, 129, 0.3);
+  --shadow-glow-purple: 0 0 20px rgba(20, 184, 166, 0.3);
+  --shadow-glow-pink: 0 0 20px rgba(14, 165, 233, 0.3);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  /* ── Glassmorphism ── */
+  --glass-bg: rgba(15, 15, 45, 0.4);
+  --glass-border: 1px solid rgba(255, 255, 255, 0.08);
+  --glass-blur: blur(20px);
+  --glass-bg-light: rgba(255, 255, 255, 0.05);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 300ms ease;
+  --transition-slow: 500ms ease;
+  --transition-spring: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+  /* ── Z-Index Scale ── */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-chatbot: 450;
+  --z-cursor: 500;
+  --z-loader: 9999;
+
+  /* ── Section Spacing ── */
+  --section-py: clamp(4rem, 8vw, 8rem);
+  --container-max: 1200px;
+  --container-px: clamp(1rem, 4vw, 2rem);
+}
+
+/* ============================================
+   LIGHT THEME OVERRIDES
+   ============================================ */
+[data-theme="light"] {
+  --clr-bg-primary: #f8fafc;
+  --clr-bg-secondary: #f1f5f9;
+  --clr-bg-tertiary: #e2e8f0;
+  --clr-bg-card: rgba(255, 255, 255, 0.8);
+  --clr-bg-glass: rgba(255, 255, 255, 0.5);
+  --clr-bg-glass-hover: rgba(255, 255, 255, 0.7);
+
+  --clr-text-primary: #0f172a;
+  --clr-text-secondary: #334155;
+  --clr-text-muted: #64748b;
+  --clr-text-accent: #059669;
+
+  --clr-accent-blue: #059669; /* Emerald */
+  --clr-accent-purple: #0d9488; /* Teal */
+
+  --grad-primary: linear-gradient(135deg, #059669, #0d9488);
+  --grad-secondary: linear-gradient(135deg, #0d9488, #0284c7);
+  --grad-bg: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 50%, #f8fafc 100%);
+  --grad-card: linear-gradient(135deg, rgba(5, 150, 105, 0.05), rgba(13, 148, 136, 0.05));
+
+  --clr-border: rgba(0, 0, 0, 0.08);
+  --clr-border-hover: rgba(5, 150, 105, 0.3);
+  --clr-border-glass: rgba(0, 0, 0, 0.06);
+
+  --glass-bg: rgba(255, 255, 255, 0.6);
+  --glass-border: 1px solid rgba(0, 0, 0, 0.06);
+  --glass-bg-light: rgba(255, 255, 255, 0.3);
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.15);
+  --shadow-glow-blue: 0 0 20px rgba(5, 150, 105, 0.2);
+  --shadow-glow-purple: 0 0 20px rgba(13, 148, 136, 0.2);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Full Stack Developer & AI Enthusiast</title>
+    <meta name="description"
+        content="Personal portfolio of a Computer Science student specializing in full-stack development and open source.">
+    <meta property="og:title" content="Portfolio | Full Stack Developer">
+    <meta property="og:description"
+        content="Explore my projects, skills, and experience in software development and AI.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/achievements.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/hire.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+    <!-- LOADER -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-orbit">
+                <div class="loader-logo">&lt;LK&gt;</div>
+            </div>
+            <div class="loader-bar-track">
+                <div class="loader-bar-fill"></div>
+            </div>
+            <div class="loader-text">Loading Portfolio...</div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">LINGESWARA S</a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div style="display:flex;align-items:center;gap:0.5rem;">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- HERO -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <p class="hero-greeting"><i class="fas fa-terminal"></i> Hello, World! I'm</p>
+                    <h1 class="hero-name">Lingeswara <span class="highlight">S</span></h1>
+                    <div class="hero-role">I'm a <span class="typing-text"></span><span class="cursor"></span></div>
+                    <p class="hero-tagline">Full stack developer creating seamless and high-performance applications.
+                        Experienced in React, Node.js, and data-driven systems.
+                        Passionate about solving real-world problems through code.</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-lg"><i class="fas fa-rocket"></i> View
+                            Projects</a>
+                        <a href="#hire" class="btn btn-outline btn-lg hire-btn-glow"><i class="fas fa-handshake"></i>
+                            Hire Me</a>
+                        <a href="#contact" class="btn btn-glass btn-lg"><i class="fas fa-envelope"></i> Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-ring">
+                        <img src="assets/images/profile2.png" alt="Lingeswara S"
+                            onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=LS&backgroundColor=0a0a1a&textColor=00d4ff&fontSize=42'">
+                    </div>
+                    <div class="hero-image-glow"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll Down</span><i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Get To Know Me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="about-image-decoration"></div>
+                    <div class="about-image-ring">
+                        <img src="assets/images/profile.jpg" alt="Lingeswara S"
+                            onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=LS&backgroundColor=0a0a1a&textColor=00d4ff&fontSize=42'">
+                    </div>
+                </div>
+                <div class="about-content reveal-right">
+                    <h3>A Passionate <span class="gradient-text">CSE Student</span></h3>
+                    <p class="about-bio">I am currently pursuing a Bachelor of Engineering in Computer Science and
+                        Engineering (3rd year) at Coimbatore Institute of Engineering and Technology. I am a passionate
+                        Full Stack Developer with a strong focus on Python and Django, specializing in building
+                        efficient, scalable, and user-friendly applications. I have hands-on experience in developing
+                        real-time and AI-based projects, with a keen interest in solving real-world problems through
+                        technology. I am actively seeking full-time internship opportunities to apply my skills, gain
+                        industry experience, and contribute to impactful software development projects.</p>
+                    <div class="about-details">
+                        <div class="about-detail-item"><i
+                                class="fas fa-graduation-cap"></i><span><strong>Degree:</strong> B.E Computer Science
+                                and Engineering</span></div>
+                        <div class="about-detail-item"><i
+                                class="fas fa-map-marker-alt"></i><span><strong>Location:</strong> India -
+                                Tamilnadu</span></div>
+                        <div class="about-detail-item"><i class="fas fa-code"></i><span><strong>Focus:</strong> Full
+                                Stack Development</span></div>
+                        <div class="about-detail-item"><i class="fas fa-briefcase"></i><span><strong>Status:</strong>
+                                Open to work</span></div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="5" data-suffix="+">0</div>
+                            <div class="stat-label">Projects</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number" data-count="15" data-suffix="+">0</div>
+                            <div class="stat-label">Certifications</div>
+                        </div>
+                        <a href="assets/Resume/Resume.pdf" class="btn btn-primary" download="Lingeswara_S_Resume.pdf"><i
+                                class="fas fa-download"></i> Download Resume</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">What I Work With</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-description">Technologies and tools I use to bring ideas to life.</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="glass-card skill-category reveal delay-1">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon"><i class="fas fa-palette"></i></div>
+                        <div>
+                            <div class="skill-category-title">Frontend</div>
+                            <div class="skill-category-count">4 skills</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">React.js</span><span
+                                        class="skill-percent">90%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">JavaScript</span><span
+                                        class="skill-percent">90%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">HTML/CSS</span><span
+                                        class="skill-percent">95%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-wind"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Tailwind CSS</span><span
+                                        class="skill-percent">85%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="glass-card skill-category reveal delay-2">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:var(--grad-secondary)"><i
+                                class="fas fa-server"></i></div>
+                        <div>
+                            <div class="skill-category-title">Backend</div>
+                            <div class="skill-category-count">4 skills</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Node.js</span><span
+                                        class="skill-percent">85%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Python</span><span
+                                        class="skill-percent">90%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">MongoDB</span><span
+                                        class="skill-percent">95%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-bolt"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Express.js</span><span
+                                        class="skill-percent">85%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="glass-card skill-category reveal delay-3">
+                    <div class="skill-category-header">
+                        <div class="skill-category-icon" style="background:linear-gradient(135deg,#34d399,#22d3ee)"><i
+                                class="fas fa-tools"></i></div>
+                        <div>
+                            <div class="skill-category-title">Tools</div>
+                            <div class="skill-category-count">5 skills</div>
+                        </div>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Git/GitHub</span><span
+                                        class="skill-percent">92%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Photoshop</span><span
+                                        class="skill-percent">75%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="75"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-linux"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Linux</span><span
+                                        class="skill-percent">80%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-figma"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Figma</span><span
+                                        class="skill-percent">70%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                            <div class="skill-info">
+                                <div class="skill-name-row"><span class="skill-name">Canva</span><span
+                                        class="skill-percent">72%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-bar-fill" data-percent="72"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-description">A selection of projects that showcase my skills and passion.</p>
+            </div>
+            <div class="projects-filter reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+
+                <button class="filter-btn" data-filter="tools">Tools</button>
+            </div>
+            <div class="projects-grid">
+
+                <div class="project-card reveal delay-2" data-category="web" data-id="2">
+                    <div class="project-card-image"
+                        style="background:linear-gradient(135deg,#1a0a2e,#2d1a4e);display:flex;align-items:center;justify-content:center;height:200px">
+                        <i class="fas fa-users" style="font-size:3rem;color:var(--clr-accent-purple);opacity:0.4"></i>
+                        <div class="project-card-overlay">
+                            <div class="project-card-links"><a href="#" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a><a href="#" aria-label="Demo"><i
+                                        class="fas fa-external-link-alt"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">Digital Attendance Tracking System</h4>
+                        <p class="project-card-desc">Social platform for developers with real-time messaging and project
+                            collaboration.</p>
+                        <div class="project-card-tech"><span class="badge badge-accent">React</span><span
+                                class="badge badge-accent">Node.js</span><span
+                                class="badge badge-accent">Socket.io</span></div>
+                    </div>
+                </div>
+                <div class="project-card reveal delay-3" data-category="tools" data-id="3">
+                    <div class="project-card-image"
+                        style="background:linear-gradient(135deg,#0a1a2d,#1a2d4e);display:flex;align-items:center;justify-content:center;height:200px">
+                        <i class="fas fa-cloud" style="font-size:3rem;color:var(--clr-accent-cyan);opacity:0.4"></i>
+                        <div class="project-card-overlay">
+                            <div class="project-card-links"><a href="#" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a><a href="#" aria-label="Demo"><i
+                                        class="fas fa-external-link-alt"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">CloudDeploy CLI</h4>
+                        <p class="project-card-desc">Multi-cloud deployment CLI with CI/CD pipeline generation and IaC
+                            templates.</p>
+                        <div class="project-card-tech"><span class="badge badge-accent">Go</span><span
+                                class="badge badge-accent">Docker</span><span
+                                class="badge badge-accent">Terraform</span></div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal delay-2" data-category="web" data-id="5">
+                    <div class="project-card-image"
+                        style="background:linear-gradient(135deg,#0a2d1a,#1a4e2d);display:flex;align-items:center;justify-content:center;height:200px">
+                        <i class="fas fa-leaf" style="font-size:3rem;color:var(--clr-accent-green);opacity:0.4"></i>
+                        <div class="project-card-overlay">
+                            <div class="project-card-links"><a href="#" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a><a href="#" aria-label="Demo"><i
+                                        class="fas fa-external-link-alt"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">EcoMarket</h4>
+                        <p class="project-card-desc">Sustainable e-commerce with carbon footprint tracking and
+                            eco-friendly shipping.</p>
+                        <div class="project-card-tech"><span class="badge badge-accent">Next.js</span><span
+                                class="badge badge-accent">Stripe</span><span class="badge badge-accent">Prisma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal delay-3" data-category="tools" data-id="6">
+                    <div class="project-card-image"
+                        style="background:linear-gradient(135deg,#2d0a1a,#4e1a2d);display:flex;align-items:center;justify-content:center;height:200px">
+                        <i class="fas fa-chart-bar" style="font-size:3rem;color:var(--clr-accent-pink);opacity:0.4"></i>
+                        <div class="project-card-overlay">
+                            <div class="project-card-links"><a href="#" aria-label="GitHub"><i
+                                        class="fab fa-github"></i></a><a href="#" aria-label="Demo"><i
+                                        class="fas fa-external-link-alt"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="project-card-body">
+                        <h4 class="project-card-title">GitViz Analytics</h4>
+                        <p class="project-card-desc">Visual analytics for GitHub repos with contribution graphs and code
+                            heatmaps.</p>
+                        <div class="project-card-tech"><span class="badge badge-accent">TypeScript</span><span
+                                class="badge badge-accent">D3.js</span><span class="badge badge-accent">Express</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT MODAL -->
+    <div class="modal-overlay" id="project-modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Project Details</h3><button class="modal-close" aria-label="Close"><i
+                        class="fas fa-times"></i></button>
+            </div>
+            <div class="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <!-- <section id="experience" class="section">
+<div class="container">
+<div class="section-header reveal">
+<span class="section-subtitle">My Journey</span>
+<h2 class="section-title">Experience & Education</h2>
+</div>
+<div class="timeline">
+<div class="timeline-item reveal-left">
+<div class="timeline-card">
+<div class="timeline-date"><i class="fas fa-calendar"></i> 2025 - Present</div>
+<h4 class="timeline-title">Full Stack Developer Intern</h4>
+<div class="timeline-subtitle">Tech Innovation Labs</div>
+<p class="timeline-desc">Building scalable web applications using React, Node.js, and cloud services. Working on microservices architecture and CI/CD pipelines.</p>
+</div>
+</div>
+<div class="timeline-item reveal-right">
+<div class="timeline-card">
+<div class="timeline-date"><i class="fas fa-calendar"></i> 2024 - 2025</div>
+<h4 class="timeline-title">ML Research Assistant</h4>
+<div class="timeline-subtitle">University AI Lab</div>
+<p class="timeline-desc">Conducted research in natural language processing and computer vision. Published a paper on transformer-based text summarization.</p>
+</div>
+</div>
+<div class="timeline-item reveal-left">
+<div class="timeline-card">
+<div class="timeline-date"><i class="fas fa-calendar"></i> 2023 - 2027</div>
+<h4 class="timeline-title">B.E Computer Science and Engineering</h4>
+<div class="timeline-subtitle">Coimbatore Institute of Engineering and Technology</div>
+<p class="timeline-desc">Specializing in software engineering and web development. Current CGPA: 8.9/10. Active member in coding and extra-curicular activities.</p>
+</div>
+</div> -->
+    <!-- <div class="timeline-item reveal-right">
+<div class="timeline-card">
+<div class="timeline-date"><i class="fas fa-calendar"></i> 2023</div>
+<h4 class="timeline-title">Open Source Contributor</h4>
+<div class="timeline-subtitle">Various Projects</div>
+<p class="timeline-desc">Contributed to 10+ open source projects. Participated in Hacktoberfest and Google Summer of Code preparation.</p>
+</div>
+</div> -->
+    </div>
+    </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Recognition</span>
+                <h2 class="section-title">Achievements & Certifications</h2>
+            </div>
+            <div class="achievements-grid">
+                <!-- Card 1 -->
+                <div class="achievement-card reveal delay-1">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/hackathon.jpg" alt="Hackathon Winner"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"><i class="fas fa-trophy"></i></div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                            <h4 class="achievement-title">Hackathon Winner</h4>
+                            <p class="achievement-desc">1st place at National Code Sprint 2024 — built an accessibility
+                                tool in 36 hours.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                    <span class="achievement-badge">🥇 1st</span>
+                </div>
+                <!-- Card 2 -->
+                <div class="achievement-card reveal delay-2">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/aws-cert.jpg" alt="AWS Certified"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#ff9900,#ffb84d)"><i class="fab fa-aws"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:var(--grad-secondary)"><i
+                                    class="fab fa-aws"></i></div>
+                            <h4 class="achievement-title">AWS Certified</h4>
+                            <p class="achievement-desc">AWS Cloud Practitioner certification — cloud architecture and
+                                deployment expertise.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="achievement-card reveal delay-3">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/leetcode.jpg" alt="LeetCode Achievement"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#34d399,#22d3ee)"><i class="fas fa-code"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#34d399,#22d3ee)"><i
+                                    class="fas fa-code"></i></div>
+                            <h4 class="achievement-title">500+ LeetCode</h4>
+                            <p class="achievement-desc">Solved 500+ problems with a focus on data structures,
+                                algorithms, and dynamic programming.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="achievement-card reveal delay-4">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/google-cert.jpg" alt="Google Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i class="fab fa-google"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i
+                                    class="fab fa-google"></i></div>
+                            <h4 class="achievement-title">Google TensorFlow</h4>
+                            <p class="achievement-desc">TensorFlow Developer Certificate — expertise in building and
+                                training neural network models.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="achievement-card reveal delay-4">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/google-cert.jpg" alt="Google Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i class="fab fa-google"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i
+                                    class="fab fa-google"></i></div>
+                            <h4 class="achievement-title">Google TensorFlow</h4>
+                            <p class="achievement-desc">TensorFlow Developer Certificate — expertise in building and
+                                training neural network models.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="achievement-card reveal delay-4">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/google-cert.jpg" alt="Google Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i class="fab fa-google"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i
+                                    class="fab fa-google"></i></div>
+                            <h4 class="achievement-title">Google TensorFlow</h4>
+                            <p class="achievement-desc">TensorFlow Developer Certificate — expertise in building and
+                                training neural network models.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra certificates (hidden by default) -->
+            <div class="achievements-extra" id="achievements-extra">
+                <!-- Card 5 -->
+                <div class="achievement-card reveal delay-1">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/cert-5.jpg" alt="Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i class="fas fa-star"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)"><i
+                                    class="fas fa-star"></i></div>
+                            <h4 class="achievement-title">Certificate Title 5</h4>
+                            <p class="achievement-desc">Add your certificate description here.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 6 -->
+                <div class="achievement-card reveal delay-2">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/cert-6.jpg" alt="Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#ec4899,#f43f5e)"><i class="fas fa-award"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#ec4899,#f43f5e)"><i
+                                    class="fas fa-award"></i></div>
+                            <h4 class="achievement-title">Certificate Title 6</h4>
+                            <p class="achievement-desc">Add your certificate description here.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 7 -->
+                <div class="achievement-card reveal delay-3">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/cert-7.jpg" alt="Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#6366f1,#8b5cf6)"><i
+                                    class="fas fa-certificate"></i></div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#6366f1,#8b5cf6)"><i
+                                    class="fas fa-certificate"></i></div>
+                            <h4 class="achievement-title">Certificate Title 7</h4>
+                            <p class="achievement-desc">Add your certificate description here.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 8 -->
+                <div class="achievement-card reveal delay-4">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/cert-8.jpg" alt="Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#14b8a6,#06b6d4)"><i class="fas fa-medal"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#14b8a6,#06b6d4)"><i
+                                    class="fas fa-medal"></i></div>
+                            <h4 class="achievement-title">Certificate Title 8</h4>
+                            <p class="achievement-desc">Add your certificate description here.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="achievement-card reveal delay-4">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/google-cert.jpg" alt="Google Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i class="fab fa-google"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i
+                                    class="fab fa-google"></i></div>
+                            <h4 class="achievement-title">Google TensorFlow</h4>
+                            <p class="achievement-desc">TensorFlow Developer Certificate — expertise in building and
+                                training neural network models.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="achievement-card reveal delay-4">
+                    <div class="glass-card">
+                        <div class="achievement-image">
+                            <img src="assets/images/google-cert.jpg" alt="Google Certificate"
+                                onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                            <div class="achievement-image-placeholder"
+                                style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i class="fab fa-google"></i>
+                            </div>
+                            <div class="achievement-image-overlay"><i class="fas fa-search-plus"></i> View</div>
+                        </div>
+                        <div class="achievement-body">
+                            <div class="achievement-icon" style="background:linear-gradient(135deg,#fb923c,#f472b6)"><i
+                                    class="fab fa-google"></i></div>
+                            <h4 class="achievement-title">Google TensorFlow</h4>
+                            <p class="achievement-desc">TensorFlow Developer Certificate — expertise in building and
+                                training neural network models.</p>
+                            <a href="#" target="_blank" rel="noopener" class="cert-drive-link"><i
+                                    class="fas fa-external-link-alt"></i> View Certificate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- View More Button -->
+            <div class="certificate-view-more" style="text-align:center;margin-top:var(--sp-10);">
+                <button class="btn btn-outline btn-lg view-more" id="achievements-toggle">
+                    <i class="fas fa-chevron-down"></i> View More Certificates
+                </button>
+            </div>
+
+            <!-- Image Lightbox -->
+            <div class="achievement-lightbox" id="achievement-lightbox">
+                <button class="achievement-lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+                <img src="" alt="Certificate Preview" id="lightbox-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- HIRE ME CTA -->
+    <section id="hire" class="section hire-section">
+        <div class="container">
+            <div class="hire-banner glass-card reveal">
+                <div class="hire-content">
+                    <div class="hire-icon"><i class="fas fa-briefcase"></i></div>
+                    <h2 class="hire-title">Available for <span class="gradient-text">Hire</span></h2>
+                    <p class="hire-desc">I'm currently open to freelance projects, internships, and full-time
+                        opportunities. Let's build something amazing together!</p>
+                    <div class="hire-highlights">
+                        <div class="hire-highlight-item"><i class="fas fa-check-circle"></i> Full Stack Development
+                        </div>
+                        <div class="hire-highlight-item"><i class="fas fa-check-circle"></i> API & Backend Services
+                        </div>
+                        <div class="hire-highlight-item"><i class="fas fa-check-circle"></i> Cloud Deployment</div>
+                        <div class="hire-highlight-item"><i class="fas fa-check-circle"></i> UI/UX Implementation</div>
+                    </div>
+                    <div class="hire-actions">
+                        <a href="#contact" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i> Get In
+                            Touch</a>
+                        <a href="#" class="btn btn-outline btn-lg"><i class="fas fa-download"></i> Download Resume</a>
+                    </div>
+                </div>
+                <div class="hire-availability">
+                    <span class="hire-status-dot"></span>
+                    <span>Available Now</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-description">Have a project in mind or just want to chat? Let's connect!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <h3>Let's work <span class="gradient-text">together</span></h3>
+                    <p>I'm always excited about new opportunities, collaborations, and interesting projects. Feel free
+                        to reach out!</p>
+                    <div class="contact-details">
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-detail-text"><strong>Email</strong>lingeshwarakani@gmail.com</div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-detail-text"><strong>Location</strong>India - Tamilnadu</div>
+                        </div>
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon"><i class="fas fa-clock"></i></div>
+                            <div class="contact-detail-text"><strong>Availability</strong>Open for freelance & full-time
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <!-- <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a> -->
+                        <a href="https://instagram.com" target="_blank" class="social-link" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper reveal-right">
+                    <form class="glass-card contact-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-input" id="contact-name" placeholder=" " required>
+                            <label class="form-label" for="contact-name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-input" id="contact-email" placeholder=" " required>
+                            <label class="form-label" for="contact-email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-input" id="contact-message" placeholder=" " required
+                                rows="5"></textarea>
+                            <label class="form-label" for="contact-message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg form-submit"><i
+                                class="fas fa-paper-plane"></i> Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" style="padding:var(--sp-12) 0 var(--sp-6);border-top:1px solid var(--clr-border);background:var(--bg-secondary);">
+        <div class="container">
+            <div class="footer-grid" style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:var(--sp-8);margin-bottom:var(--sp-10);">
+                
+                <div class="footer-brand">
+                    <h3 style="margin-bottom:var(--sp-4);font-size:var(--fs-xl);"><span class="gradient-text">&lt;LK/&gt;</span> Lingeswara S</h3>
+                    <p style="color:var(--clr-text-muted);line-height:1.6;margin-bottom:var(--sp-4);">
+                        Passionate Full Stack Developer specializing in Python, Django, and modern web applications. Focused on building efficient and scalable solutions.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h4 style="margin-bottom:var(--sp-4);color:var(--clr-text);">Quick Links</h4>
+                    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--sp-3);">
+                        <li><a href="#home" style="color:var(--clr-text-muted);text-decoration:none;transition:color var(--transition-base);" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fas fa-chevron-right" style="font-size:10px;margin-right:8px;color:var(--clr-primary);"></i>Home</a></li>
+                        <li><a href="#about" style="color:var(--clr-text-muted);text-decoration:none;transition:color var(--transition-base);" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fas fa-chevron-right" style="font-size:10px;margin-right:8px;color:var(--clr-primary);"></i>About</a></li>
+                        <li><a href="#skills" style="color:var(--clr-text-muted);text-decoration:none;transition:color var(--transition-base);" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fas fa-chevron-right" style="font-size:10px;margin-right:8px;color:var(--clr-primary);"></i>Skills</a></li>
+                        <li><a href="#projects" style="color:var(--clr-text-muted);text-decoration:none;transition:color var(--transition-base);" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fas fa-chevron-right" style="font-size:10px;margin-right:8px;color:var(--clr-primary);"></i>Projects</a></li>
+                        <li><a href="#achievements" style="color:var(--clr-text-muted);text-decoration:none;transition:color var(--transition-base);" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fas fa-chevron-right" style="font-size:10px;margin-right:8px;color:var(--clr-primary);"></i>Achievements</a></li>
+                        <li><a href="#contact" style="color:var(--clr-text-muted);text-decoration:none;transition:color var(--transition-base);" onmouseover="this.style.color='var(--clr-primary)'" onmouseout="this.style.color='var(--clr-text-muted)'"><i class="fas fa-chevron-right" style="font-size:10px;margin-right:8px;color:var(--clr-primary);"></i>Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4 style="margin-bottom:var(--sp-4);color:var(--clr-text);">Connect With Me</h4>
+                    <div style="display:flex;gap:var(--sp-4);">
+                        <a href="https://github.com" target="_blank" aria-label="GitHub" style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--radius-full);background:var(--glass-bg);border:var(--glass-border);color:var(--clr-text);font-size:var(--fs-lg);transition:all var(--transition-base);" onmouseover="this.style.background='var(--clr-primary)';this.style.color='#0a0a1a';this.style.transform='translateY(-3px)'" onmouseout="this.style.background='var(--glass-bg)';this.style.color='var(--clr-text)';this.style.transform='translateY(0)'">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn" style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--radius-full);background:var(--glass-bg);border:var(--glass-border);color:var(--clr-text);font-size:var(--fs-lg);transition:all var(--transition-base);" onmouseover="this.style.background='var(--clr-primary)';this.style.color='#0a0a1a';this.style.transform='translateY(-3px)'" onmouseout="this.style.background='var(--glass-bg)';this.style.color='var(--clr-text)';this.style.transform='translateY(0)'">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" aria-label="Instagram" style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--radius-full);background:var(--glass-bg);border:var(--glass-border);color:var(--clr-text);font-size:var(--fs-lg);transition:all var(--transition-base);" onmouseover="this.style.background='var(--clr-primary)';this.style.color='#0a0a1a';this.style.transform='translateY(-3px)'" onmouseout="this.style.background='var(--glass-bg)';this.style.color='var(--clr-text)';this.style.transform='translateY(0)'">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:lingeshwarakani@gmail.com" aria-label="Email" style="display:flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:var(--radius-full);background:var(--glass-bg);border:var(--glass-border);color:var(--clr-text);font-size:var(--fs-lg);transition:all var(--transition-base);" onmouseover="this.style.background='var(--clr-primary)';this.style.color='#0a0a1a';this.style.transform='translateY(-3px)'" onmouseout="this.style.background='var(--glass-bg)';this.style.color='var(--clr-text)';this.style.transform='translateY(0)'">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom" style="text-align:center;padding-top:var(--sp-6);border-top:1px solid rgba(255,255,255,0.05);">
+                <p style="color:var(--clr-text-muted);font-size:var(--fs-sm);">
+                    Designed & Built with ❤️ &copy; 2026 Lingeswara S. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BACK TO TOP -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- CHATBOT -->
+    <div class="chatbot">
+        <div class="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-info">
+                    <div class="chatbot-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="chatbot-header-text">
+                        <h4>Portfolio Assistant</h4><span>● Online</span>
+                    </div>
+                </div>
+                <button class="chatbot-close" aria-label="Close chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages">
+                <div class="chat-message bot">
+                    Hey! 👋 I'm your portfolio assistant. Ask me about projects, skills, or how to get in touch!
+                    <div class="quick-links">
+                        <button class="quick-link">Projects</button>
+                        <button class="quick-link">Skills</button>
+                        <button class="quick-link">Contact</button>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" placeholder="Type a message..." aria-label="Chat message">
+                <button aria-label="Send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button class="chatbot-toggle" aria-label="Open chat">
+            <i class="fas fa-robot"></i>
+            <span class="badge-dot"></span>
+        </button>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="js/loader.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/projects.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
