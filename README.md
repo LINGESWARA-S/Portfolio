@@ -57,6 +57,7 @@ Because this project relies purely on static files (HTML/CSS/JS), there is no ne
 - [LinkedIn](https://linkedin.com/in/your-profile)
 - [GitHub](https://github.com/yourusername)
 - Email: lingeshwarakani@gmail.com
+- Portfolio: https://lingeswara-s.netlify.app/
 
 ---
-*Designed & Built with ❤️ by Lingeswara S &copy; 2026*
+*&copy; Copyrights 2026 Lingeswara S. All Rights Reserved*
